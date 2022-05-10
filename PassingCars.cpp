@@ -19,7 +19,3 @@ int PassingCars(vector<int> &A) {
   }
   return result;
 }
-int main() {
-  vector<int> input{1};
-  printf("%d\n", PassingCars(input));
-}

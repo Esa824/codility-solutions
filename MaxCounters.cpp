@@ -26,10 +26,4 @@ vector<int> MaxCounters(int N, vector<int> &A) {
   }
   return result;
 }
-int main() {
-  vector<int> input = {3, 4, 4, 6, 1, 4, 4};
-  vector<int> result = MaxCounters(5, input);
-  for (int i = 0; i < result.size(); i++) {
-    cout << result[i] << ",";
-  }
-}
+

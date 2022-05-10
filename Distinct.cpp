@@ -11,7 +11,3 @@ int Distinct(vector<int> &A) {
   A.erase(itr, A.end());
   return A.size();
 }
-int main() {
-  vector<int> vec = {2, 1, 1, 2, 3, 1};
-  cout << Distinct(vec);
-}

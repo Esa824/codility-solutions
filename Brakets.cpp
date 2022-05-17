@@ -22,7 +22,3 @@ int Brakets(string &S) {
     return 0;
   }
 }
-int main() {
-  string S = "([{}(){}]]";
-  cout << Brakets(S);
-}

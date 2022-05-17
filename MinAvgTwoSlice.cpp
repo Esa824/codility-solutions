@@ -33,7 +33,3 @@ int solution(vector<int> &A) {
   }
   return min_index;
 }
-int main() { 
-  vector<int> vec = {1, 9, 1};
-  cout << solution(vec);
-}

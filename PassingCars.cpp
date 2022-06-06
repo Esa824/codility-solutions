@@ -15,7 +15,7 @@ int PassingCars(vector<int> &A) {
     }
   }
   if(result > 1000000000){
-    return -1; 
+    return -1;
   }
   return result;
 }

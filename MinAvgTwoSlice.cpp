@@ -11,7 +11,7 @@ int solution(vector<int> &A) {
   vector<float> sums;
 
   int prefix = 0;
-  for (int i = 0; i < A.size(); i += 1) {
+  for (size_t i = 0; i < A.size(); i += 1) {
     prefix += A[i];
     sums.push_back(prefix);
   }

@@ -2,7 +2,7 @@
 using namespace std;
 int plus_from(vector<int> &A, int n) {
   int result = 0;
-  for (int i = n; i < A.size(); i++) {
+  for (size_t i = n; i < A.size(); i++) {
     result += A[i];
   }
   return result;
@@ -16,7 +16,7 @@ int TapEquilibrium(vector<int> &A) {
   int result = 0;
   int check = 0;
   int  b = plus_from(A,0);
-  for (int i = 1; i < A.size(); i++) {
+  for (size_t i = 1; i < A.size(); i++) {
     b -= A[spot - 1];
     int a = b - plus;
     if(a < 0){

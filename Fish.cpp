@@ -4,7 +4,7 @@ int fish(vector<int> &A, vector<int> &B) {
   stack<int> s;
   int upstreams = 0;
   vector<int> downstreams;
-  for (int i = 0; i < A.size(); i++) {
+  for (size_t i = 0; i < A.size(); i++) {
     if (B[i]) {
       s.push(A[i]);
     } else {

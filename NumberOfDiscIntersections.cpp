@@ -17,8 +17,8 @@ int NumberOfDiscIntersections(vector<int> &A) {
   }
   sort(start.begin(), start.end());
   sort(end.begin(), end.end());
-  for (int i = 0; i < A.size(); i++) {
-    for (int j = k; j < A.size(); j++) {
+  for (size_t i = 0; i < A.size(); i++) {
+    for (size_t j = k; j < A.size(); j++) {
       if (start[i] <= end[j]) {
         result += open_discs;
         if (result > 10000000) {
@@ -32,7 +32,4 @@ int NumberOfDiscIntersections(vector<int> &A) {
     }
   }
   return result;
-}
-int main() { vector<int> input = {1, 5, 2, 1, 4, 0}; 
-  cout << NumberOfDiscIntersections(input);
 }

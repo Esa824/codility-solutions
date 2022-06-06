@@ -20,7 +20,7 @@ int FrogRiverOne(vector<int> &A, int X) {
   unordered_map<int, int> map;
   unordered_map<int, int> check;
   int check2 = 0;
-  for (int i = 0; i < A.size(); i++) {
+  for (size_t i = 0; i < A.size(); i++) {
     map[A[i]] = A[i];
     if (check[A[i]] == A[i]) {
       check.erase(A[i]);

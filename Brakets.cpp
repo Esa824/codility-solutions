@@ -6,7 +6,7 @@ int Brakets(string &S) {
     return 0;
   }
   stack<char> stack;
-  for (int i = 0; i < S.size(); i++) {
+  for (size_t i = 0; i < S.size(); i++) {
     if (S[i] == '[' || S[i] == '{' || S[i] == '(') {
       stack.push(S[i]);
     }

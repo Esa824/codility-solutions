@@ -64,8 +64,3 @@ int main() {
 
   cout << EquiLeader(input);
 }
-/*
-4, 4, 2, 5, 3, 4, 4, 4
-4  4  4 -1 -1 -1  4  4     left
-4  4  -1  4  4 4  4  4     right
-*/

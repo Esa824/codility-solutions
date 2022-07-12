@@ -42,3 +42,7 @@ int Dominater(vector<int> &A) {
   int result = binarySearch(A, 0, A.size(), key_of_biggest_number);
   return result;
 }
+int main(){
+  vector<int> input = {1,2,3,4,5};
+  cout << Dominater(input);
+}

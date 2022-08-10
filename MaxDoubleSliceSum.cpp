@@ -36,7 +36,7 @@ int MaxDoubleSliceSum(vector<int> &A) {
   }
   // Loop to calculate the
   // maximum subarray sum till ith index
-  for (int i = A.size() - 2; i >= 0; i--) {
+  for (int i = A.size() - 2; i >= 1; i--) {
     backKadane[i] = max(backKadane[i + 1] + A[i], 0);
   }
   for (int i = 1; i < A.size() - 1; i++) {
